@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Teller</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <div id="id-card-container" class="cl-card-container">
+        <div id="id-search-container" class="cl-search-container">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="./assets/search.png" alt="image for search button"></button>
+        </div>
+        <div class="cl-search-error">
+            <p>Invalid Input.</p>
+        </div>
+        <div id="id-weather-container" class="cl-weather-container">
+            <img src="./assets/rain.png" class="cl-weather-icon" alt="image of weather icon">
+            <h1 id="id-temp-header" class="cl-temp-header">22°c</h1>
+            <h2 id="id-city-header" class="cl-city-header">Berlin</h2>
+            <div id="id-details-container" class="cl-details-container">
+                <div id="id-details-column" class="cl-details-column">
+                    <img src="./assets/humidity.png" alt="image of humidity icon">
+                    <div id="id-humidity-info" class="cl-humidity-info">
+                        <p id="id-humidity-paragraph" class="cl-humidity-paragraph">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div id="id-details-column" class="cl-details-column">
+                    <img src="./assets/wind.png" alt="image of humidity icon">
+                    <div id="id-wind-info" class="cl-wind-info">
+                        <p id="id-wind-paragraph" class="cl-wind-paragraph">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
